@@ -10,10 +10,10 @@ export const ResumeFooter = () => {
         <p className={styles.text}>vladislavmetik@icloud.com</p>
       </div>
       <div className={styles.links}>
-        <a className={styles.icon} href="https://github.com/destolyar" target="_blank">
+        <a className={styles.icon} href="https://github.com/destolyar" target="_blank" rel="noreferrer">
           <Image width={20} height={20} src='/icons/github.svg' alt='github'/>
         </a>
-        <a className={styles.icon} href="https://www.linkedin.com/in/vladislav-metik/" target="_blank">
+        <a className={styles.icon} href="https://www.linkedin.com/in/vladislav-metik/" target="_blank" rel="noreferrer">
           <Image width={20} height={20} src='/icons/linkedin.svg' alt='linkedin'/>
         </a>
       </div>
