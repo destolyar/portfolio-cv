@@ -21,11 +21,11 @@ export const ResumeBody = () => {
       </div>
       <div className={styles.about}>
         <h3 className={styles.title}>💁‍♂️About me</h3>
-        <p className={styles.text}>Hi there! I'm expirienced frontend developer who really loves what he do.
+        <p className={styles.text}>Hi there! I&apos;m expirienced frontend developer who really loves what he do.
           I Can redesign, build websites and fix bugs for you.
-          Hi there! I'm expirienced frontend developer who really loves what he do.
-          Hi there! I'm expirienced frontend developer who really loves what he do.
-          Hi there! I'm expirienced frontend developer who really loves what he do.
+          Hi there! I&apos;m expirienced frontend developer who really loves what he do.
+          Hi there! I&apos;m expirienced frontend developer who really loves what he do.
+          Hi there! I&apos;m expirienced frontend developer who really loves what he do.
           Be free to ask me something.
         </p>
       </div>
