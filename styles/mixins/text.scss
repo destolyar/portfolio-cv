@@ -1,0 +1,43 @@
+@import './colors.scss';
+@import './adaptive.scss';
+
+@mixin page-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+
+  @include tablets {
+    font-size: 26px;
+  }
+
+  @include phones {
+    font-size: 21px;
+  }
+}
+
+@mixin title {
+  font-family: 'Open Sans';
+  font-style: bold;
+  font-weight: 700;
+  font-size: 20px;
+
+  @include tablets {
+    font-size: 18px;
+  }
+
+  @include phones {
+    font-size: 16px;
+  }
+}
+
+@mixin paragraph {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  @include phones {
+    font-size: 14px;
+  }
+}

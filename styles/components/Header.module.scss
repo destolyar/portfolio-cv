@@ -1,0 +1,9 @@
+@import '../mixins/utils.scss';
+
+.container {
+  height: 300px;
+  width: 100%;
+  padding: 60px;
+  color: $secondary-text-color;
+  background-color: $secondary-background-color;
+}
