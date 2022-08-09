@@ -18,7 +18,8 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({ width, height, image
           placeholder="blur"
           blurDataURL={image + "-blur.png"}
           quality={70} 
-          objectFit="cover"/>
+          objectFit="cover"
+          alt={label}/>
           <figcaption className={styles.caption}>{label}</figcaption>
       </figure>
     </div>
