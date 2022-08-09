@@ -7,12 +7,20 @@
   font-weight: 700;
   font-size: 32px;
 
+  @include desktop {
+    font-size: 22px;
+  }
+
+  @include laptop {
+    font-size: 24px;
+  }
+
   @include tablets {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   @include phones {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 
@@ -22,7 +30,7 @@
   font-weight: 700;
   font-size: 20px;
 
-  @include tablets {
+  @include desktop {
     font-size: 18px;
   }
 
@@ -36,6 +44,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+
+  @include laptop {
+    font-size: 15px;
+  }
 
   @include phones {
     font-size: 14px;

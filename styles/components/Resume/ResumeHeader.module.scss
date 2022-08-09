@@ -9,7 +9,12 @@
   border-bottom: 1px solid rgba($color: gray, $alpha: 0.2);
 
   @include laptop {
+    flex-direction: column;
     padding: 20px 40px 40px 40px;
+  }
+
+  @include tablets {
+    flex-direction: row;
   }
 
   @include phones {
@@ -23,6 +28,16 @@
 
 .info {
   margin-left: 30px;
+
+  @include laptop {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  @include tablets {
+    margin-top: 0;
+    margin-left: 30px;
+  }
 }
 
 .title {

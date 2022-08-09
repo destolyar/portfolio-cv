@@ -1,20 +1,45 @@
+@import '../../mixins/utils.scss';
+
 .container {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
+
+  @include tablets {
+    top: -132px;
+  }
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
-  grid-template-rows: repeat(auto-fill, 350px);;
-  padding: 60px 60px;
+  grid-template-rows: repeat(auto-fill, 350px);
+  padding: 60px;
   height: 100%;
   overflow: hidden;
+
+  @include laptop {
+    padding: 40px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-rows: repeat(auto-fill, 340px);
+  }
+
+  @include tablets {
+    padding: 20px;
+    justify-content: center;
+  }
 }
 
 .nav {
   padding-left: 60px;
   padding-bottom: 60px;
   border-bottom: 1px solid rgba($color: gray, $alpha: 0.2);
+
+  @include tablets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
 }

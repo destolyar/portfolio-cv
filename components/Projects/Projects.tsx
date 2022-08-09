@@ -11,24 +11,21 @@ export const Projects: React.FC = () => {
         <ProjectsItem 
           width={350} 
           height={300}
-          image={"/previewed/mocup-min.png"}
+          label={"Next auth pages"}
+          image={"/previewed/mocup"}
           />
-                  <ProjectsItem 
+        <ProjectsItem 
           width={350} 
           height={300}
-          image={"/previewed/mocup-min.png"}
-          />        <ProjectsItem 
+          label={"Adventure landing"}
+          image={"/previewed/adventure-landing"}
+          />
+
+<ProjectsItem 
           width={350} 
           height={300}
-          image={"/previewed/mocup-min.png"}
-          />        <ProjectsItem 
-          width={350} 
-          height={300}
-          image={"/previewed/mocup-min.png"}
-          />        <ProjectsItem 
-          width={350} 
-          height={300}
-          image={"/previewed/mocup-min.png"}
+          label={"Adventure landing"}
+          image={"/previewed/adventure-landing"}
           />
       </section>
     </section>
