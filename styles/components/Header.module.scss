@@ -1,9 +1,75 @@
 @import '../mixins/utils.scss';
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 200px;
-  width: 100%;
   padding: 60px;
   color: $secondary-text-color;
   background-color: $secondary-background-color;
+
+  @include laptop {
+    padding: 40px;
+  }
+
+  @include tablets {
+    padding: 20px;
+  }
+}
+
+.text {
+  margin-left: 558px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgb(168, 216, 38);
+  animation: flashing-border 1s step-end infinite,
+  name 1.5s steps(10) forwards,
+  profession 1.5s steps(13) 3s forwards;
+
+  @include desktop {
+    margin-left: 458px;
+  }
+
+  @include laptop {
+    margin-left: 358px;
+  }
+
+  @media screen and (max-width: 865px) {
+    display: none;
+  }
+}
+
+@keyframes flashing-border {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: rgb(168, 216, 38);;
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes name {
+  from {
+    width: 0ch;
+  }
+
+  to {
+    width: 10ch;
+  }
+}
+
+@keyframes profession {
+  from {
+    width: 12ch;
+  }
+
+  to {
+    width: 23ch;
+  }
 }
