@@ -1,0 +1,11 @@
+@import '../../../mixins/utils.scss';
+
+.container {
+  width: 400px;
+  height: 350px;
+  background-color: aqua;
+}
+
+.container:hover {
+  @include default-hover;
+}

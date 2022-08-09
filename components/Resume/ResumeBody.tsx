@@ -22,7 +22,7 @@ export const ResumeBody = () => {
       <div className={styles.about}>
         <h3 className={styles.title}>💁‍♂️About me</h3>
         <p className={styles.text}>
-          Hi there! I&apos;m an experienced Frontend developer who loves what he does. 
+          I&apos;m an experienced Frontend developer who loves what he does. 
           I Can redesign, build websites, and fix bugs for you.
         </p>
       </div>
