@@ -14,7 +14,7 @@ export const RealWorkItem: React.FC<RealWorkItemProps> = ({label, date, workTask
           width={35} height={35} alt={label}/>
         <h4 className={styles.date}>{date}</h4>
       </div>
-      <h4 className={styles.tasks}>Responsibilities</h4>
+      <h4 className={styles.tasks}>Responsibilities:</h4>
       <ul>
         {workTasks.map(i => <li className={styles.task} key={i}>{i}</li>)}
       </ul>
