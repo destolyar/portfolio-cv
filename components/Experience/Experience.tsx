@@ -22,8 +22,8 @@ export const Experience: React.FC = () => {
       transition={{type: "linear"}}
       className={styles.container}>
       <nav className={styles.nav}>
-        <h2 className={styles.button} onClick={() => setIsProjects(true)}>Projects</h2>
-        <h2 className={styles.button} onClick={() => setIsProjects(false)}>Work Expirience</h2>
+        <h2 className={styles.projects} onClick={() => setIsProjects(true)}>Projects</h2>
+        <h2 className={styles.work} onClick={() => setIsProjects(false)}>Work Expirience</h2>
       </nav>
       <>
         {(isProjects) ? <Projects/> : <RealWork/>}

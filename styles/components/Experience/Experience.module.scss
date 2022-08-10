@@ -26,10 +26,20 @@
   }
 }
 
-.button {
-  margin-right: 50px;
-
+.projects, .work {
   &:hover {
     @include default-hover;
+  }
+
+  @include tablets {
+    margin-right: 0px;
+  }
+}
+
+.projects {
+  margin-right: 50px;
+
+  @include tablets {
+    margin-right: 30px;
   }
 }
