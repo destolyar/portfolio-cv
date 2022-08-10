@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
 import { Layout } from '../components/Layout'
-import { Projects } from '../components/Projects/Projects'
 import { Resume } from '../components/Resume/Resume'
+import { Experience } from '../components/Experience/Experience'
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <Resume/>
-      <Projects/>
+      <Experience/>
     </Layout>
   )
 }

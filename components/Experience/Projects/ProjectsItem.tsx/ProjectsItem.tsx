@@ -1,4 +1,5 @@
-import styles from '../../../styles/components/Projects/ProjectsItem/ProjectsItem.module.scss'
+import styles from 
+'../../../../styles/components/Experience/Projects/ProjectsItem/ProjectsItem.module.scss'
 import { ProjectsItemProps } from './entities/interfaces/ProjectsItem'
 import Image from 'next/image'
 

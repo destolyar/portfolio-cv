@@ -39,6 +39,22 @@
   }
 }
 
+@mixin subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  @include laptop {
+    font-size: 16px;
+  }
+
+  @include phones {
+    font-size: 16px;
+  }
+}
+
+
 @mixin paragraph {
   font-family: 'Open Sans';
   font-style: normal;
