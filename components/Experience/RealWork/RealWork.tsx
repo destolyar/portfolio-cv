@@ -19,7 +19,7 @@ export const RealWork = () => {
       transition={{type: "linear"}}
       className={styles.work}>
       <RealWorkItem label='Telecommunication company "Business network"' 
-      date='June 2022 - July 2022'
+      date='March 2022 - July 2022'
       workTasks={[
         "Adding new functionality to the admin panel",
         "The layout of new pages", 
