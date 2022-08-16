@@ -3,14 +3,14 @@ import styles from
 import { RealWorkItemProps } from './entities/interfaces/RealWorkItem'
 import Image from 'next/image'
 
-export const RealWorkItem: React.FC<RealWorkItemProps> = ({label, date, workTasks}) => {
+export const RealWorkItem: React.FC<RealWorkItemProps> = ({companyType, label, date, workTasks, image, cutImage}) => {
   return(
     <div className={styles.container}>
-      <h3 className={styles.label}>{label}</h3>
+      <h3 className={styles.label}>{companyType}<br/>{label}</h3>
       <div className={styles.info}>
         <Image 
-          className={styles.image} 
-          src='/companies/buisness-network.jpg' 
+          className={cutImage ? styles.image : ""} 
+          src={image} 
           width={35} height={35} alt={label}/>
         <h4 className={styles.date}>{date}</h4>
       </div>

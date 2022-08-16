@@ -18,12 +18,26 @@ export const RealWork = () => {
       exit="exit"
       transition={{type: "linear"}}
       className={styles.work}>
-      <RealWorkItem label='Telecommunication company "Business network"' 
-      date='March 2022 - July 2022'
-      workTasks={[
-        "Adding new functionality to the admin panel",
-        "The layout of new pages", 
-        "Bug fixes"
+      <RealWorkItem 
+        companyType='No-code platform' 
+        label='Amablox'
+        date='August 2022 - Present'
+        image='/companies/amablox.png'
+        cutImage={false}
+        workTasks={[
+          "Create new components for UI",
+          "Code refactoring"
+      ]}/>
+      <RealWorkItem 
+        companyType='Telecommunication company' 
+        label='Business network'
+        date='March 2022 - July 2022'
+        image='/companies/buisness-network.jpg'
+        cutImage={true}
+        workTasks={[
+          "Adding new functionality to the admin panel",
+          "The layout of new pages", 
+          "Bug fixes"
       ]}/>
     </motion.section>
   )
