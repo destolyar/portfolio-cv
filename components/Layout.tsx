@@ -1,9 +1,14 @@
 import { motion } from "framer-motion"
-import React, { FC } from "react"
+import React, { FC, ReactNode } from "react"
 import styles from '../styles/components/Layout.module.scss'
 import { Header } from "./Header"
 
-export const Layout: FC<any> = ({ children, key }) => {
+interface LayoutProps {
+  children: ReactNode,
+  key: any
+}
+
+export const Layout: FC<LayoutProps> = ({ children, key }) => {
   const variants = {
     hidden: { opacity: 0, x: -200, y: 0 },
     enter: { opacity: 1, x: 0, y: 0 },

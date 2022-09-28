@@ -14,7 +14,10 @@ interface TypeProject {
     screenshots: string[],
     deployLink: string,
     description: string,
-    stack: string[]
+    stack: string[],
+    responsibility: string,
+    github: string,
+    blurImage: string
 }
 
 const ProjectPage = () => {
@@ -33,12 +36,25 @@ const ProjectPage = () => {
         }
     }, [router.isReady])
 
-    const {screenshots, label, deployLink, description, stack} = project
+    const {
+        screenshots, 
+        label, 
+        deployLink, 
+        description, 
+        stack, 
+        responsibility, 
+        github, 
+        blurImage} = project
     
     return(
         <ProjectPageLayout label={label}>
-            <ImageSwitcher imagesPath={screenshots}/>
-            <Info description={description} stack={stack} deployLink={deployLink}/>
+            <ImageSwitcher imagesPath={screenshots} blurImage={blurImage}/>
+            <Info 
+                responsibility={responsibility} 
+                description={description} 
+                stack={stack} 
+                deployLink={deployLink}
+                github={github}/>
         </ProjectPageLayout>
     )
 }

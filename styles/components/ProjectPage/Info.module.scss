@@ -2,9 +2,17 @@
 
 .info {
     padding: 0 60px;
-    width: 600px;
+    width: 100%;
+    max-width: 450px;
 
     @include desktop {
-        width: 400px;
+        max-width: 300px;
+        padding: 0 40px;
+    }
+
+    @include laptop {
+        padding: 0;
+        max-width: 600px;
+        width: 100%;
     }
 }

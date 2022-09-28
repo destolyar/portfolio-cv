@@ -1,18 +1,20 @@
 [
     {
-        "id": "diary-auth-pages",
-        "label": "Authentification pages",
-        "image": "/previewed/mocup.png",
-        "blurImage": "/previewed/mocup.png",
+        "id": "landing-google-sheets",
+        "label": "Two pages website",
+        "image": "/previewed/landing-google-sheets.png",
+        "blurImage": "/previewed/landing-google-sheets-blur.png",
         "screenshots": [
             "/screenshots/landing-google-sheets-1.png",
             "/screenshots/landing-google-sheets-2.png",
             "/screenshots/landing-google-sheets-3.png",
             "/screenshots/landing-google-sheets-4.png"
         ],
-        "stack": ["Next.js", "Redux", "TypeScript", "SASS", "Axios"],
+        "stack": ["Next.js", "Redux", "TypeScript", "SASS", "Axios", "Google API"],
         "deployLink": "https://diary-app-client-3lgkpea0b-destolyar.vercel.app/login",
-        "description": "Login and registration pages for Diary App."
+        "responsibility": "Full app development",
+        "description": "The client wanted to create a website where he could announce upcoming events and collect information about those who left their details on the form. To save the data from forms, he chose Google Sheets.",
+        "deploy": "https://landing-one-indol.vercel.app/",
+        "github": "https://github.com/destolyar/portfolio-cv"
     }
 ]
-

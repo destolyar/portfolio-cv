@@ -3,8 +3,15 @@ import { Carousel } from 'react-responsive-carousel'
 import styles from '../../styles/components/ProjectPage/ImageSwitcher.module.scss'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { motion } from 'framer-motion'
+import { FC } from 'react'
 
-export const ImageSwitcher = ({ imagesPath } : {imagesPath: string[]}) => {
+
+interface ImageSwitcher {
+    imagesPath: string[],
+    blurImage: string
+}
+
+export const ImageSwitcher: FC<ImageSwitcher> = ({ imagesPath, blurImage }) => {
     const variants = {
         hidden: { opacity: 0, x: "-100vw", y: 0 },
         enter: { opacity: 1, x: 0, y: 0 },
@@ -25,11 +32,13 @@ export const ImageSwitcher = ({ imagesPath } : {imagesPath: string[]}) => {
                 infiniteLoop
                 autoPlay 
                 stopOnHover 
+                showThumbs={false}
                 showStatus={false}
                 dynamicHeight>
                 {imagesPath.map(img => <ImageSwitcherSlide 
                     key={img} 
-                    imagePath={img}/>)}
+                    imagePath={img}
+                    blurImage={blurImage}/>)}
             </Carousel>
         </motion.section>
     )

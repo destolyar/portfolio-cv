@@ -1,12 +1,16 @@
 import { FC } from "react"
-import { Stack } from "./Stack"
+import { Instruments } from "./Instruments"
 import styles from '../../styles/components/ProjectPage/Info.module.scss'
 import { motion } from "framer-motion"
+import { Description } from "./Description"
+import { LinkSection } from "./LinkSection"
 
 interface InfoProps {
     description: string,
     stack: string[],
-    deployLink: string
+    deployLink: string,
+    responsibility: string,
+    github: string
 }
 
 const variants = {
@@ -15,7 +19,7 @@ const variants = {
     exit: { opacity: 0, x: 0, y: -150 },
 }
 
-export const Info: FC<InfoProps> = ({ description, stack, deployLink  }) => {
+export const Info: FC<InfoProps> = ({ description, stack, deployLink, responsibility, github  }) => {
     return(
         <motion.section 
             className={styles.info}
@@ -24,9 +28,28 @@ export const Info: FC<InfoProps> = ({ description, stack, deployLink  }) => {
             animate="enter"
             exit="exit"
             transition={{ duration: 1.5 }}>
-            <p>{description}</p>
-            <Stack title="Stack" items={stack}/>
-            <a href={deployLink} target="_blank" rel="noreferrer">Click to check it on your device</a>
+            <Instruments 
+                title="Stack" 
+                items={stack} 
+                delay={0.4}/>
+            <Description 
+                title="Responsibility" 
+                content={responsibility} 
+                delay={0.5}/>
+            <Description 
+                title="Description" 
+                content={description} 
+                delay={0.6}/>
+            <LinkSection 
+                title="Click to check it on your device:"
+                linkTitle="Deploy"
+                link={deployLink}
+                delay={0.7}/>
+            <LinkSection 
+                title="Click to check code:"
+                linkTitle="Code"
+                link={github}
+                delay={0.8}/>
         </motion.section>
     )
 }
