@@ -19,7 +19,7 @@ export const Stack: FC<StackProps> = ({ title, items }) => {
         >
             <h2>{title}</h2>
             <ul>
-                {items.map(i => <li>{i}</li>)}
+                {items.map(i => <li key={i}>{i}</li>)}
             </ul>
         </motion.section>
     )

@@ -26,6 +26,7 @@ export const Projects: React.FC = () => {
           image={item.image}
           blurImage={item.blurImage}
           id={item.id}
+          key={item.id}
           />))}
     </motion.section>
   )
