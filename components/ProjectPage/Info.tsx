@@ -26,7 +26,7 @@ export const Info: FC<InfoProps> = ({ description, stack, deployLink  }) => {
             transition={{ duration: 1.5 }}>
             <p>{description}</p>
             <Stack title="Stack" items={stack}/>
-            <a href={deployLink} target="_blank">Click to check it on your device</a>
+            <a href={deployLink} target="_blank" rel="noreferrer">Click to check it on your device</a>
         </motion.section>
     )
 }
