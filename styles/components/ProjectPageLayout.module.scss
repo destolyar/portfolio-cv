@@ -1,0 +1,19 @@
+@import '../mixins/utils.scss';
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 60px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    border-bottom: 1px solid $border-color;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}

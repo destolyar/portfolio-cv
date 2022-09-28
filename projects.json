@@ -1,0 +1,18 @@
+[
+    {
+        "id": "diary-auth-pages",
+        "label": "Authentification pages",
+        "image": "/previewed/mocup.png",
+        "blurImage": "/previewed/mocup.png",
+        "screenshots": [
+            "/screenshots/landing-google-sheets-1.png",
+            "/screenshots/landing-google-sheets-2.png",
+            "/screenshots/landing-google-sheets-3.png",
+            "/screenshots/landing-google-sheets-4.png"
+        ],
+        "stack": ["Next.js", "Redux", "TypeScript", "SASS", "Axios"],
+        "deployLink": "https://diary-app-client-3lgkpea0b-destolyar.vercel.app/login",
+        "description": "Login and registration pages for Diary App."
+    }
+]
+
