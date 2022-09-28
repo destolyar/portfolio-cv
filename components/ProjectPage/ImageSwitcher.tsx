@@ -18,14 +18,18 @@ export const ImageSwitcher = ({ imagesPath } : {imagesPath: string[]}) => {
             animate="enter"
             exit="exit"
             transition={{ duration: 1 }}
+            className={styles.container}
         >
             <Carousel 
                 className={styles.carousel} 
                 infiniteLoop
                 autoPlay 
                 stopOnHover 
-                showStatus={false}>
-                {imagesPath.map(img => <ImageSwitcherSlide key={img} imagePath={img}/>)}
+                showStatus={false}
+                dynamicHeight>
+                {imagesPath.map(img => <ImageSwitcherSlide 
+                    key={img} 
+                    imagePath={img}/>)}
             </Carousel>
         </motion.section>
     )

@@ -1,4 +1,10 @@
+@import '../../mixins/utils.scss';
+
 .info {
     padding: 0 60px;
-    width: 100%;
+    width: 600px;
+
+    @include desktop {
+        width: 400px;
+    }
 }
