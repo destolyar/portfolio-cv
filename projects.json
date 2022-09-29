@@ -14,7 +14,7 @@
         "deployLink": "https://landing-one-indol.vercel.app/",
         "responsibility": "Full app development",
         "description": "The client wanted to create a website where he could announce upcoming events and collect information about those who left their details on the form. To save the data from forms, he chose Google Sheets.",
-        "github": "https://github.com/destolyar/portfolio-cv"
+        "github": "https://github.com/destolyar/landing-sheets"
     },
     {
         "id": "adventure-landing",
@@ -31,5 +31,84 @@
         "responsibility": "Full page development",
         "description": "The client wanted just to build this landing from Figma as React component.",
         "github": "https://github.com/destolyar/adventure-landing"
+    },
+    {
+        "id": "crypto-landing-blockos",
+        "label": "Cryptocurrency page",
+        "image": "/previewed/crypto-landing-blockos.png",
+        "blurImage": "/previewed/crypto-landing-blockos-blur.png",
+        "screenshots": [
+            "/screenshots/crypto-landing-blockos-1.png",
+            "/screenshots/crypto-landing-blockos-2.png"
+        ],
+        "stack": ["Next", "SCSS", "Typescript", "Lightweight Charts", "Framer motion"],
+        "deployLink": "https://blockos.vercel.app/",
+        "responsibility": "Full page development",
+        "description": "The customer wanted to make a copy of another page, but with his coin. As a result, the project was not completed, as the customer abandoned his idea, but I still have this page.",
+        "github": "https://github.com/destolyar/blockos"
+    },
+    {
+        "id": "momentum-greetings-app",
+        "label": "Greetings app",
+        "image": "/previewed/momentum-greetings-app.png",
+        "blurImage": "/previewed/momentum-greetings-app-blur.png",
+        "screenshots": [
+            "/screenshots/momentum-greetings-app-1.png",
+            "/screenshots/momentum-greetings-app-2.png"
+        ],
+        "stack": ["JavaScript", "HTML", "CSS"],
+        "deployLink": "https://destolyar.github.io/momentum/",
+        "responsibility": "Full app development",
+        "description": "This app builded with Vanilla Javascript. Used as homepage.",
+        "github": "https://github.com/destolyar/momentum"
+    },
+    {
+        "id": "authentification-pages-diary",
+        "label": "Authentification pages",
+        "image": "/previewed/authentification-pages-diary.png",
+        "blurImage": "/previewed/authentification-pages-diary-blur.png",
+        "screenshots": [
+            "/screenshots/authentification-pages-diary-1.png",
+            "/screenshots/authentification-pages-diary-2.png",
+            "/screenshots/authentification-pages-diary-3.png",
+            "/screenshots/authentification-pages-diary-4.png"
+        ],
+        "stack": ["React", "Next", "SASS", "TypeScript"],
+        "deployLink": "https://diary-app-client-3lgkpea0b-destolyar.vercel.app/login",
+        "responsibility": "Full pages development",
+        "description": "Basic authentication pages with some animations and form validation. Part of the diary app which now in developing status.",
+        "github": "https://github.com/destolyar/diary-app-client"
+    },
+    {
+        "id": "todo-app-theme-switching",
+        "label": "Todo app with Theme switching",
+        "image": "/previewed/todo-app-theme-switching.png",
+        "blurImage": "/previewed/todo-app-theme-switching-blur.png",
+        "screenshots": [
+            "/screenshots/todo-app-theme-switching-1.png",
+            "/screenshots/todo-app-theme-switching-2.png",
+            "/screenshots/todo-app-theme-switching-3.png",
+            "/screenshots/todo-app-theme-switching-4.png"
+        ],
+        "stack": ["React", "SASS", "TypeScript"],
+        "deployLink": "https://todo-mu-five.vercel.app/",
+        "responsibility": "Full app development",
+        "description": "It's just basic todo app, but with themes.",
+        "github": "https://github.com/destolyar/todo"
+    },
+    {
+        "id": "email-cringe-project",
+        "label": "Email",
+        "image": "/previewed/email-cringe-project.png",
+        "blurImage": "/previewed/email-cringe-project-blur.png",
+        "screenshots": [
+            "/screenshots/email-cringe-project-1.png",
+            "/screenshots/email-cringe-project-2.png"
+        ],
+        "stack": ["HTML", "CSS"],
+        "deployLink": "https://destolyar.github.io/email/",
+        "responsibility": "Full page development",
+        "description": "It's email which I build with poor HTML and CSS (tables methods). And yeah, it's working in Outlook :)",
+        "github": "https://github.com/destolyar/email"
     }
 ]

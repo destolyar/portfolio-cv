@@ -23,9 +23,9 @@ export const ReturnButton: FC<ReturnButtonProps> = ({ delay }) => {
             exit="exit"
             transition={{ duration: 1, delay }}>
             <h2 className={styles.title}>Return to projects:</h2>
-            <div className={styles.link}> 
-                <Link href="/">Projects</Link>
-            </div>
+            <Link href="/">
+                <div className={styles.link}>Projects</div>
+            </Link>
         </motion.div>
     )
 }
