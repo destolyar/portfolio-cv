@@ -5,7 +5,7 @@ import { Projects } from './Projects/Projects'
 import { RealWork } from './RealWork/RealWork'
 
 export const Experience: React.FC = () => {
-  const [isProjects, setIsProjects] = useState(false)
+  const [isProjects, setIsProjects] = useState(true)
   
   const variants = {
     hidden: { opacity: 0, x: 200, y: 0 },

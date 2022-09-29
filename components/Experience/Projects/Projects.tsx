@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
-import { ProjectsItem } from "./ProjectsItem.tsx/ProjectsItem"
+import { ProjectsItem } from "./ProjectsItem/ProjectsItem"
 import styles from '../../../styles/components/Experience/Projects/Projects.module.scss'
+import projects from '../../../projects.json'
 
 export const Projects: React.FC = () => {
   const variants = {
@@ -17,16 +18,16 @@ export const Projects: React.FC = () => {
       exit="exit"
       transition={{type: "linear"}}
       className={styles.projects}>
-      <ProjectsItem 
-        width={350} 
-        height={300}
-        label={"Next auth pages"}
-        image={"/previewed/mocup"}/>
-      <ProjectsItem 
-        width={350} 
-        height={300}
-        label={"Adventure landing"}
-        image={"/previewed/adventure-landing"}/>
+      {projects.map((item => 
+        <ProjectsItem         
+          width={350} 
+          height={300}
+          label={item.label}
+          image={item.image}
+          blurImage={item.blurImage}
+          id={item.id}
+          key={item.id}
+          />))}
     </motion.section>
   )
 }
