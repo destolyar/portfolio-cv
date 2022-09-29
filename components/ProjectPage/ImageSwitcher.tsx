@@ -34,6 +34,7 @@ export const ImageSwitcher: FC<ImageSwitcher> = ({ imagesPath, blurImage }) => {
                 stopOnHover 
                 showThumbs={false}
                 showStatus={false}
+                useKeyboardArrows
                 dynamicHeight>
                 {imagesPath.map(img => <ImageSwitcherSlide 
                     key={img} 
