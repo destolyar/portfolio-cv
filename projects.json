@@ -1,7 +1,7 @@
 [
     {
         "id": "landing-google-sheets",
-        "label": "Two pages website",
+        "label": "Meetups app",
         "image": "/previewed/landing-google-sheets.png",
         "blurImage": "/previewed/landing-google-sheets-blur.png",
         "screenshots": [
@@ -15,5 +15,21 @@
         "responsibility": "Full app development",
         "description": "The client wanted to create a website where he could announce upcoming events and collect information about those who left their details on the form. To save the data from forms, he chose Google Sheets.",
         "github": "https://github.com/destolyar/portfolio-cv"
+    },
+    {
+        "id": "adventure-landing",
+        "label": "Landing Adventure",
+        "image": "/previewed/adventure-landing.png",
+        "blurImage": "/previewed/adventure-landing-blur.png",
+        "screenshots": [
+            "/screenshots/adventure-landing-1.png",
+            "/screenshots/adventure-landing-2.png",
+            "/screenshots/adventure-landing-3.png"
+        ],
+        "stack": ["React", "SCSS", "Typescript"],
+        "deployLink": "https://destolyar.github.io/adventure-landing/",
+        "responsibility": "Full page development",
+        "description": "The client wanted just to build this landing from Figma as React component.",
+        "github": "https://github.com/destolyar/adventure-landing"
     }
 ]
