@@ -4,7 +4,14 @@ import Image from 'next/image'
 export const ResumeHeader = () => {
   return (
     <header className={styles.container}>
-      <Image className={styles.avatar} width={110} height={110} src='/avatar.jpg' alt='avatar'/>
+      <Image 
+        className={styles.avatar} 
+        width={110} 
+        height={110} 
+        placeholder="blur"
+        blurDataURL='/avatar.jpg'
+        src='/avatar.jpg' 
+        alt='avatar'/>
       <div className={styles.info}>
         <h2 className={styles.title}>Vladislav Metik</h2>
         <h3 className={styles.subtitle}>Frontend developer</h3>
