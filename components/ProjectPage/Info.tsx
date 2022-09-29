@@ -4,6 +4,8 @@ import styles from '../../styles/components/ProjectPage/Info.module.scss'
 import { motion } from "framer-motion"
 import { Description } from "./Description"
 import { LinkSection } from "./LinkSection"
+import { ReturnButton } from "./ReturnButton"
+
 
 interface InfoProps {
     description: string,
@@ -50,6 +52,7 @@ export const Info: FC<InfoProps> = ({ description, stack, deployLink, responsibi
                 linkTitle="Code"
                 link={github}
                 delay={0.8}/>
+            <ReturnButton delay={0.9}/>
         </motion.section>
     )
 }

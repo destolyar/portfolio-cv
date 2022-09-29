@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import Head from "next/head"
 import React, { FC, ReactNode } from "react"
 import styles from '../styles/components/Layout.module.scss'
 import { Header } from "./Header"
@@ -12,6 +13,9 @@ export const Layout: FC<any> = ({ children, key }) => {
 
   return(
     <>
+      <Head>
+        <title>Porfolio</title>
+      </Head>
       <Header/>
       <motion.main 
         variants={variants}
