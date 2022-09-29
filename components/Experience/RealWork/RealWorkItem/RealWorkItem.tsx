@@ -1,7 +1,15 @@
 import styles from  
 '../../../../styles/components/Experience/RealWork/RealWorkItem/RealWorkItem.module.scss'
-import { RealWorkItemProps } from './entities/interfaces/RealWorkItem'
 import Image from 'next/image'
+
+export interface RealWorkItemProps {
+  label: string,
+  date: string,
+  workTasks: string[],
+  image: string,
+  companyType: string,
+  cutImage: boolean
+}
 
 export const RealWorkItem: React.FC<RealWorkItemProps> = ({companyType, label, date, workTasks, image, cutImage}) => {
   return(

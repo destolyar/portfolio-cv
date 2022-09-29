@@ -1,8 +1,17 @@
 import styles from 
 '../../../../styles/components/Experience/Projects/ProjectsItem/ProjectsItem.module.scss'
-import { ProjectsItemProps } from './entities/interfaces/ProjectsItem'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+
+interface ProjectsItemProps {
+  width: number,
+  height: number,
+  image: string,
+  blurImage: string,
+  label: string,
+  id: string
+}
+
 
 export const ProjectsItem: React.FC<ProjectsItemProps> = ({ width, height, image, blurImage, label, id }) => {
   const sizes = {
