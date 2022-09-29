@@ -21,7 +21,7 @@ export const RealWork = () => {
       <RealWorkItem 
         companyType='No-code platform' 
         label='Amablox'
-        date='August 2022 - Present'
+        date='September 2022 - Present'
         image='/companies/amablox.png'
         cutImage={false}
         workTasks={[
@@ -31,7 +31,7 @@ export const RealWork = () => {
       <RealWorkItem 
         companyType='Telecommunication company' 
         label='Business network'
-        date='March 2022 - July 2022'
+        date='March 2022 - August 2022'
         image='/companies/buisness-network.jpg'
         cutImage={true}
         workTasks={[
