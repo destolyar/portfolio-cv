@@ -1,44 +1,35 @@
-import { motion } from 'framer-motion'
-import styles from 
-'../../../styles/components/Experience/RealWork/RealWork.module.scss'
-import { RealWorkItem } from './RealWorkItem/RealWorkItem'
+import { motion } from "framer-motion";
+import styles from "../../../styles/components/Experience/RealWork/RealWork.module.scss";
+import { RealWorkItem } from "./RealWorkItem/RealWorkItem";
 
 export const RealWork = () => {
   const variants = {
     hidden: { opacity: 0, x: 200, y: 0 },
     enter: { opacity: 1, x: 0, y: 0 },
     exit: { opacity: 0, x: 0, y: 100 },
-  }
+  };
 
-  return(
-    <motion.section 
+  return (
+    <motion.section
       variants={variants}
       initial="hidden"
       animate="enter"
       exit="exit"
-      transition={{type: "linear"}}
-      className={styles.work}>
-      <RealWorkItem 
-        companyType='No-code platform' 
-        label='Amablox'
-        date='September 2022 - Present'
-        image='/companies/amablox.png'
+      transition={{ type: "linear" }}
+      className={styles.work}
+    >
+      <RealWorkItem
+        companyType="IT-company"
+        label="Astral"
+        date="June 2021 - Present"
+        image="/companies/astral.png"
         cutImage={false}
         workTasks={[
-          "Create new components for UI",
-          "Code refactoring"
-      ]}/>
-      <RealWorkItem 
-        companyType='Telecommunication company' 
-        label='Business network'
-        date='March 2022 - August 2022'
-        image='/companies/buisness-network.jpg'
-        cutImage={true}
-        workTasks={[
-          "Adding new functionality to the admin panel",
-          "The layout of new pages", 
-          "Bug fixes"
-      ]}/>
+          "Zabbix - configure and setup",
+          "VMWare - make new virtual machines",
+          "Rusiem - maintain and configure",
+        ]}
+      />
     </motion.section>
-  )
-}
+  );
+};
