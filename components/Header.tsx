@@ -11,7 +11,7 @@ export const Header = () => {
             1000,
             "I'm",
             1000,
-            "Dmiry",
+            "Dmitry",
             1000,
             "Frontend dev",
             15000,
@@ -21,7 +21,6 @@ export const Header = () => {
             fontSize: "2rem",
             color: "#fff",
           }}
-          repeat={true}
           wrapper="span"
         />
       </h1>

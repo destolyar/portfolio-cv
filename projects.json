@@ -1,19 +1,19 @@
 [
   {
-    "id": "landing-google-sheets",
-    "label": "Meetups app",
-    "image": "/previewed/landing-google-sheets.png",
-    "blurImage": "/previewed/landing-google-sheets-blur.png",
+    "id": "notes-material-app",
+    "label": "Notes app",
+    "image": "/previewed/notes-app.png",
+    "blurImage": "/previewed/notes-app-blur.png",
     "screenshots": [
-      "/screenshots/landing-google-sheets-1.png",
-      "/screenshots/landing-google-sheets-2.png",
-      "/screenshots/landing-google-sheets-3.png",
-      "/screenshots/landing-google-sheets-4.png"
+      "/screenshots/notes-app-1.png",
+      "/screenshots/notes-app-2.png",
+      "/screenshots/notes-app-3.png",
+      "/screenshots/notes-app-4.png"
     ],
-    "stack": ["Next.js", "Redux", "TypeScript", "SASS", "Axios", "Google API"],
-    "deployLink": "https://landing-one-indol.vercel.app/",
+    "stack": ["React", "TypeScript", "MaterialUI", "Axios", "JsonServer"],
+    "deployLink": "https://notes-inky.vercel.app/",
     "responsibility": "Full app development",
-    "description": "The client wanted to create a website where he could announce upcoming events and collect information about those who left their details on the form. To save the data from forms, he chose Google Sheets.",
-    "github": "https://github.com/destolyar/landing-sheets"
+    "description": "Notes app",
+    "github": "https://github.com/Mayamee/MewMaterialUI"
   }
 ]
