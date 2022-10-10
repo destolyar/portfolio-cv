@@ -6,8 +6,8 @@ import { Experience } from '../components/Experience/Experience'
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Resume/>
-      <Experience/>
+      <Resume />
+      <Experience />
     </Layout>
   )
 }

@@ -1,14 +1,14 @@
-import styles from "../../../../styles/components/Experience/Projects/ProjectsItem/ProjectsItem.module.scss";
-import Image from "next/image";
-import { useRouter } from "next/router";
+import styles from '../../../../styles/components/Experience/Projects/ProjectsItem/ProjectsItem.module.scss'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 interface ProjectsItemProps {
-  width: number;
-  height: number;
-  image: string;
-  blurImage: string;
-  label: string;
-  id: string;
+  width: number
+  height: number
+  image: string
+  blurImage: string
+  label: string
+  id: string
 }
 
 export const ProjectsItem: React.FC<ProjectsItemProps> = ({
@@ -22,16 +22,16 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
   const sizes = {
     width: `${width}px`,
     height: `${height}px`,
-  };
+  }
 
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <div
       className={styles.container}
       style={sizes}
       onClick={() => {
-        router.push("/project/" + id);
+        router.push('/project/' + id)
       }}
     >
       <figure>
@@ -48,5 +48,5 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
         <figcaption className={styles.caption}>{label}</figcaption>
       </figure>
     </div>
-  );
-};
+  )
+}

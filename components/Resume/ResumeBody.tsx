@@ -1,4 +1,4 @@
-import styles from "../../styles/components/Resume/ResumeBody.module.scss";
+import styles from '../../styles/components/Resume/ResumeBody.module.scss'
 
 export const ResumeBody = () => {
   return (
@@ -36,10 +36,10 @@ export const ResumeBody = () => {
       <div className={styles.about}>
         <h3 className={styles.title}>💁‍♂️About me</h3>
         <p className={styles.text}>
-          I&apos;m an experienced Frontend developer who loves what he does. I
-          Can redesign, build websites, and fix bugs for you.
+          I&apos;m an experienced Frontend developer who loves what he does. I Can redesign, build
+          websites, and fix bugs for you.
         </p>
       </div>
     </div>
-  );
-};
+  )
+}

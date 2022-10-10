@@ -1,8 +1,8 @@
-import { motion } from "framer-motion"
-import Head from "next/head"
-import React, { FC, ReactNode } from "react"
+import { motion } from 'framer-motion'
+import Head from 'next/head'
+import React, { FC, ReactNode } from 'react'
 import styles from '../styles/components/Layout.module.scss'
-import { Header } from "./Header"
+import { Header } from './Header'
 
 export const Layout: FC<any> = ({ children, key }) => {
   const variants = {
@@ -11,23 +11,23 @@ export const Layout: FC<any> = ({ children, key }) => {
     exit: { opacity: 0, x: 0, y: -100 },
   }
 
-  return(
+  return (
     <>
       <Head>
         <title>Porfolio</title>
       </Head>
-      <Header/>
-      <motion.main 
+      <Header />
+      <motion.main
         variants={variants}
         key={key}
         initial="hidden"
         animate="enter"
         exit="exit"
-        transition={{type: "linear"}}
+        transition={{ type: 'linear' }}
         className={styles.container}
       >
-      {children}
-    </motion.main>
-  </>
+        {children}
+      </motion.main>
+    </>
   )
 }

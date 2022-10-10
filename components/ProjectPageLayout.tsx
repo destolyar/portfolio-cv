@@ -1,6 +1,6 @@
-import { motion } from "framer-motion"
-import Head from "next/head"
-import React, { FC } from "react"
+import { motion } from 'framer-motion'
+import Head from 'next/head'
+import React, { FC } from 'react'
 import styles from '../styles/components/ProjectPageLayout.module.scss'
 
 export const ProjectPageLayout: FC<any> = ({ children, key, label }) => {
@@ -10,7 +10,7 @@ export const ProjectPageLayout: FC<any> = ({ children, key, label }) => {
     exit: { opacity: 0, x: 0, y: -150 },
   }
 
-  return(
+  return (
     <>
       <Head>
         <title>{label}</title>
@@ -22,11 +22,11 @@ export const ProjectPageLayout: FC<any> = ({ children, key, label }) => {
           animate="enter"
           exit="exit"
           transition={{ duration: 1 }}
-        >{label}</motion.h1>
+        >
+          {label}
+        </motion.h1>
       </header>
-      <main className={styles.container}>
-      {children}
-    </main>
-  </>
+      <main className={styles.container}>{children}</main>
+    </>
   )
 }

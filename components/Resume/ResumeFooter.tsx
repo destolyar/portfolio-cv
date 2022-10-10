@@ -1,5 +1,5 @@
-import styles from "../../styles/components/Resume/ResumeFooter.module.scss";
-import Image from "next/image";
+import styles from '../../styles/components/Resume/ResumeFooter.module.scss'
+import Image from 'next/image'
 
 export const ResumeFooter = () => {
   return (
@@ -24,14 +24,9 @@ export const ResumeFooter = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Image
-            width={20}
-            height={20}
-            src="/icons/linkedin.svg"
-            alt="linkedin"
-          />
+          <Image width={20} height={20} src="/icons/linkedin.svg" alt="linkedin" />
         </a>
       </div>
     </div>
-  );
-};
+  )
+}

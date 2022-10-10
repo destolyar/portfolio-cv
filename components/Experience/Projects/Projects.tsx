@@ -1,14 +1,14 @@
-import { motion } from "framer-motion";
-import { ProjectsItem } from "./ProjectsItem/ProjectsItem";
-import styles from "../../../styles/components/Experience/Projects/Projects.module.scss";
-import projects from "../../../projects.json";
+import { motion } from 'framer-motion'
+import { ProjectsItem } from './ProjectsItem/ProjectsItem'
+import styles from '../../../styles/components/Experience/Projects/Projects.module.scss'
+import projects from '../../../projects.json'
 
 export const Projects: React.FC = () => {
   const variants = {
     hidden: { opacity: 0, x: 200, y: 0 },
     enter: { opacity: 1, x: 0, y: 0 },
     exit: { opacity: 0, x: 0, y: 100 },
-  };
+  }
 
   return (
     <motion.section
@@ -16,7 +16,7 @@ export const Projects: React.FC = () => {
       initial="hidden"
       animate="enter"
       exit="exit"
-      transition={{ type: "linear" }}
+      transition={{ type: 'linear' }}
       className={styles.projects}
     >
       {projects.map((item) => (
@@ -31,5 +31,5 @@ export const Projects: React.FC = () => {
         />
       ))}
     </motion.section>
-  );
-};
+  )
+}

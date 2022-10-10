@@ -3,14 +3,13 @@ import { ResumeBody } from './ResumeBody'
 import { ResumeFooter } from './ResumeFooter'
 import { ResumeHeader } from './ResumeHeader'
 
-
 export const Resume = () => {
-  return(
+  return (
     <section className={styles.container}>
       <div className={styles.layout}>
-        <ResumeHeader/>
-        <ResumeBody/>
-        <ResumeFooter/>
+        <ResumeHeader />
+        <ResumeBody />
+        <ResumeFooter />
       </div>
     </section>
   )

@@ -1,5 +1,5 @@
-import styles from "../../styles/components/Resume/ResumeHeader.module.scss";
-import Image from "next/image";
+import styles from '../../styles/components/Resume/ResumeHeader.module.scss'
+import Image from 'next/image'
 
 export const ResumeHeader = () => {
   return (
@@ -18,12 +18,7 @@ export const ResumeHeader = () => {
         <h2 className={styles.title}>Dmitry Belykh</h2>
         <h3 className={styles.subtitle}>Frontend developer</h3>
         <div className={styles.location}>
-          <Image
-            width={15}
-            height={15}
-            src="/icons/location.svg"
-            alt="location"
-          />
+          <Image width={15} height={15} src="/icons/location.svg" alt="location" />
           <h4 className={styles.description}>Moscow</h4>
         </div>
         <div className={styles.availability}>
@@ -32,5 +27,5 @@ export const ResumeHeader = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}

@@ -22,7 +22,8 @@
   display: flex;
 }
 
-.hire, .works {
+.hire,
+.works {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +34,8 @@
   border: 1px solid black;
 }
 
-.hire:hover, .works:hover {
+.hire:hover,
+.works:hover {
   @include default-hover;
 }
 
@@ -43,7 +45,8 @@
   background-color: $secondary-background-color;
 }
 
-.skills, .about {
+.skills,
+.about {
   margin-top: 30px;
 }
 
