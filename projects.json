@@ -29,7 +29,7 @@
       "/screenshots/react-quiz-app-3.png",
       "/screenshots/react-quiz-app-4.png"
     ],
-    "stack": ["React", "Express", "MaterialUI", "Axios", "MongoDB", "JWT", "Fullstack"],
+    "stack": ["React", "Redux", "Express", "MaterialUI", "Axios", "MongoDB", "JWT", "Fullstack"],
     "deployLink": "",
     "responsibility": "Full stack app development",
     "description": "Quiz app - application for creating and taking quizzes",

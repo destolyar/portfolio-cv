@@ -26,7 +26,7 @@ export const ResumeBody = () => {
         <ul>
           <li className={styles.text}>HTML, CSS, SCSS</li>
           <li className={styles.text}>JavaScript, TypeScript</li>
-          <li className={styles.text}>React, Next.js</li>
+          <li className={styles.text}>React, Redux</li>
           <li className={styles.text}>Node.js, Express</li>
           <li className={styles.text}>MongoDB</li>
           <li className={styles.text}>Webpack</li>
