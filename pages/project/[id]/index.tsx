@@ -17,6 +17,7 @@ interface TypeProject {
   responsibility: string
   github: string
   blurImage: string
+  isDeploy: boolean
 }
 
 const ProjectPage = () => {
@@ -34,8 +35,17 @@ const ProjectPage = () => {
     }
   }, [router.isReady])
 
-  const { screenshots, label, deployLink, description, stack, responsibility, github, blurImage } =
-    project
+  const {
+    screenshots,
+    label,
+    deployLink,
+    description,
+    stack,
+    responsibility,
+    github,
+    blurImage,
+    isDeploy,
+  } = project
 
   return (
     <ProjectPageLayout label={label}>
@@ -46,6 +56,7 @@ const ProjectPage = () => {
         stack={stack}
         deployLink={deployLink}
         github={github}
+        isDeploy={isDeploy}
       />
     </ProjectPageLayout>
   )
