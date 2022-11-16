@@ -19,19 +19,19 @@ export const RealWork = () => {
       transition={{type: "linear"}}
       className={styles.work}>
       <RealWorkItem 
-        companyType='No-code platform' 
-        label='Amablox'
+        companyType='Web Agency' 
+        label='CodeLab_'
         date='September 2022 - Present'
-        image='/companies/amablox.png'
+        image='/companies/codelab.png'
         cutImage={false}
         workTasks={[
-          "Create new components for UI",
-          "Code refactoring"
+          "Development of eCommerce project in beauty sphere which building with React, Hydrogen, Shopify Storefront API.",
+          "Code refactoring and bug fixes in existing code"
       ]}/>
       <RealWorkItem 
         companyType='Telecommunication company' 
         label='Business network'
-        date='March 2022 - August 2022'
+        date='November 2021 - August 2022'
         image='/companies/buisness-network.jpg'
         cutImage={true}
         workTasks={[
