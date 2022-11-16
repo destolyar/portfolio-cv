@@ -14,7 +14,7 @@ export interface RealWorkItemProps {
 export const RealWorkItem: React.FC<RealWorkItemProps> = ({companyType, label, date, workTasks, image, cutImage}) => {
   return(
     <div className={styles.container}>
-      <h3 className={styles.label}>{companyType}<br/>"{label}"</h3>
+      <h3 className={styles.label}>{companyType}<br/>&quot;{label}&quot;</h3>
       <div className={styles.info}>
         <Image 
           className={cutImage ? styles.image : ""} 
