@@ -26,17 +26,17 @@ export const RealWork = () => {
         cutImage={false}
         workTasks={[
           "Development of eCommerce project in beauty sphere which building with React, Hydrogen, Shopify Storefront API.",
-          "Code refactoring and bug fixes in existing code"
+          "Was refactored legacy code to reduce overall code size by 30 percent",
+          "Independently developed cart, a showcase of goods, search by a shop, the home page"
       ]}/>
       <RealWorkItem 
         companyType='Telecommunication company' 
         label='Business network'
-        date='June 2022 - August 2022'
+        date='January 2022 - August 2022'
         image='/companies/buisness-network.jpg'
         cutImage={true}
         workTasks={[
           "Adding new functionality to the admin panel",
-          "The layout of new pages", 
           "Bug fixes"
       ]}/>
     </motion.section>
