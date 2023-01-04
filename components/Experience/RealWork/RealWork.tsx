@@ -26,7 +26,6 @@ export const RealWork = () => {
         cutImage={false}
         workTasks={[
           "Development of eCommerce project in beauty sphere which building with React, Hydrogen, Shopify Storefront API.",
-          "Was refactored legacy code to reduce overall code size by 30 percent",
           "Independently developed cart, a showcase of goods, search by a shop, the home page"
       ]}/>
       <RealWorkItem 
