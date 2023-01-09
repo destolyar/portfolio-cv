@@ -31,7 +31,7 @@ export const RealWork = () => {
       <RealWorkItem 
         companyType='Telecommunication company' 
         label='Business network'
-        date='January 2022 - August 2022'
+        date='June 2022 - August 2022'
         image='/companies/buisness-network.jpg'
         cutImage={true}
         workTasks={[
