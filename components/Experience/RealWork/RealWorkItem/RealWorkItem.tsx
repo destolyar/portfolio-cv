@@ -5,13 +5,13 @@ import Image from 'next/image'
 export interface RealWorkItemProps {
   label: string,
   date: string,
-  workTasks: string[],
+  position: string,
   image: string,
   companyType: string,
   cutImage: boolean
 }
 
-export const RealWorkItem: React.FC<RealWorkItemProps> = ({companyType, label, date, workTasks, image, cutImage}) => {
+export const RealWorkItem: React.FC<RealWorkItemProps> = ({companyType, label, date, position, image, cutImage}) => {
   return(
     <div className={styles.container}>
       <h3 className={styles.label}>{companyType}<br/>&quot;{label}&quot;</h3>
@@ -22,10 +22,7 @@ export const RealWorkItem: React.FC<RealWorkItemProps> = ({companyType, label, d
           width={35} height={35} alt={label}/>
         <h4 className={styles.date}>{date}</h4>
       </div>
-      <h4 className={styles.tasks}>Responsibilities:</h4>
-      <ul>
-        {workTasks.map(i => <li className={styles.task} key={i}>{i}</li>)}
-      </ul>
+      <h4 className={styles.tasks}>Position: {position}</h4>
     </div>
   )
 }

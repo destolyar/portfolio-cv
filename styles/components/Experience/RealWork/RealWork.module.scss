@@ -1,17 +1,15 @@
 @import '../../../mixins/utils.scss';
 
 .work {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 350px);
-  grid-template-rows: repeat(auto-fill, 350px);
+  display: flex;
+  flex-wrap: wrap;
   padding: 60px;
-  height: 100%;
+  height: fit-content;
   grid-gap: 40px;
   overflow: hidden;
 
   @include laptop {
     padding: 40px;
-    grid-template-rows: repeat(auto-fill, 320px);
     grid-gap: 20px;
   }
 
