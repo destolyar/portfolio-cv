@@ -2,7 +2,7 @@
 @import './adaptive.scss';
 
 @mixin page-title {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -25,7 +25,7 @@
 }
 
 @mixin title {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-style: bold;
   font-weight: 700;
   font-size: 20px;
@@ -40,7 +40,7 @@
 }
 
 @mixin subtitle {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -56,7 +56,7 @@
 
 
 @mixin paragraph {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
