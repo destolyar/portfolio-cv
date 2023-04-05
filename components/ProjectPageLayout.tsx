@@ -1,9 +1,14 @@
 import { motion } from "framer-motion"
 import Head from "next/head"
-import React, { FC } from "react"
+import React, { FC, ReactNode } from "react"
 import styles from '../styles/components/ProjectPageLayout.module.scss'
 
-export const ProjectPageLayout: FC<any> = ({ children, key, label }) => {
+interface ProjectPageLayoutProps {
+  children: ReactNode,
+  label: string
+}
+
+export const ProjectPageLayout: FC<ProjectPageLayoutProps> = ({ children, label }) => {
   const variants = {
     hidden: { opacity: 0, x: 0, y: -150 },
     enter: { opacity: 1, x: 0, y: 0 },

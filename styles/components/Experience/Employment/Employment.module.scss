@@ -1,0 +1,19 @@
+@import '../../../mixins/utils.scss';
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  height: fit-content;
+  grid-gap: 40px;
+  overflow: hidden;
+
+  @include laptop {
+    grid-gap: 20px;
+  }
+
+  @include tablets {
+    padding: 20px;
+    justify-content: center;
+  }
+}

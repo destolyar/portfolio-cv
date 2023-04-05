@@ -5,7 +5,7 @@ import { FreelanceProjects } from '../components/Experience/FreelanceProjects/Fr
 const Home: NextPage = () => {
   return (
     <Experience>
-      <FreelanceProjects/>
+      <FreelanceProjects />
     </Experience>
   )
 }

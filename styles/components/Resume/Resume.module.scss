@@ -2,8 +2,12 @@
 
 .container {
   position: relative;
-  top: -192px;
+  top: -157px;
   z-index: 1;
+
+  @include phones {
+    top: -161px;
+  }
 }
 
 .layout {

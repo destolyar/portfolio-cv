@@ -1,9 +1,8 @@
-import styles from 
-'../../../../styles/components/Experience/Projects/ProjectsItem/ProjectsItem.module.scss'
+import styles from '../../../styles/components/Experience/FreelanceProjects/Project.module.scss'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
-interface ProjectsItemProps {
+interface ProjectProps {
   width: number,
   height: number,
   image: string,
@@ -13,16 +12,11 @@ interface ProjectsItemProps {
 }
 
 
-export const ProjectsItem: React.FC<ProjectsItemProps> = ({ width, height, image, blurImage, label, id }) => {
-  const sizes = {
-    width: `${width}px`,
-    height: `${height}px`
-  }
-
+export const Project: React.FC<ProjectProps> = ({ width, height, image, blurImage, label, id }) => {
   const router = useRouter()
 
   return(
-    <div className={styles.container} style={sizes} onClick={() => {
+    <div className={styles.container} onClick={() => {
       router.push("/project/" + id)
     }}>
       <figure>

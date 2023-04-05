@@ -17,7 +17,8 @@ export const ImageSwitcherSlide: FC<ImageSwitcherSlideProps> = ({ imagePath, blu
                 placeholder="blur"
                 blurDataURL="/"
                 objectFit='contain' 
-                src={imagePath}/>
+                src={imagePath}
+                alt={imagePath}/>
         </div>
     )
 }

@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
 import { Experience } from '../components/Experience/Experience'
-import { FreelanceProjects } from '../components/Experience/FreelanceProjects/FreelanceProjects'
+import { AboutMe } from '../components/Experience/AboutMe/AboutMe'
 
 const Home: NextPage = () => {
   return (
     <Experience>
-      <FreelanceProjects/>
+      <AboutMe />
     </Experience>
   )
 }

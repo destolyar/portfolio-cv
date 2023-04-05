@@ -34,7 +34,7 @@ const ProjectPage = () => {
             const project = projects.filter(i => i.id === id)[0]
             setProject(project)
         }
-    }, [router.isReady])
+    }, [router.isReady, router.query])
 
     const {
         screenshots, 
