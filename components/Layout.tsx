@@ -20,7 +20,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Porfolio</title>
+        <title>My Porfolio</title>
         <meta property="description" content="Vladislav Metik - Experienced Full-stack Developer: React, Vue, Node.js, Python, Go, and more. Specializing in e-commerce & web platforms with a strong background in frontend & backend technologies, databases, and modern web development tools." />
         <meta name="google-site-verification" content="gICfyg1QrXDtWC3en4dFryHRJd9hfaWAJOQRSMlTTFc" />
       </Head>

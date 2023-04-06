@@ -2,9 +2,8 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { ImageSwitcher } from "../../../components/ProjectPage/ImageSwitcher";
 import { ProjectPageLayout } from "../../../components/ProjectPageLayout"
-import styles from '../../../styles/components/ProjectPage/ProjectPage.module.scss'
-import projects from '../../../projects.json'
 import { Info } from "../../../components/ProjectPage/Info";
+import projects from '../../../projects.json'
 
 
 interface TypeProject {
@@ -29,11 +28,9 @@ const ProjectPage = () => {
 
 
     useEffect(() => {
-        if (router.isReady) {
-            const { id } = router.query
-            const project = projects.filter(i => i.id === id)[0]
-            setProject(project)
-        }
+        const { id } = router.query
+        const project = projects.find(i => i.id === id)
+        if (project) setProject(project)
     }, [router.isReady, router.query])
 
     const {

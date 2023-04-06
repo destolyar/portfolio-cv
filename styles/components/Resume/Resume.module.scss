@@ -5,6 +5,12 @@
   top: -157px;
   z-index: 1;
 
+  @include tablets {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
   @include phones {
     top: -161px;
   }
@@ -25,11 +31,7 @@
   }
 
   @include tablets {
-    width: 398px;
-  }
-
-  @include phones {
-    width: 338px;
+    width: 100%;
   }
 }
 

@@ -1,0 +1,75 @@
+@import '../mixins/utils.scss';
+
+.container {
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  max-width: 60%;
+  padding: 20px 60px;
+
+  @include desktop {
+    padding: 40px;
+  }
+
+  @include laptop {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @include tablets {
+    padding: 20px;
+  }
+}
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid $border-color;
+
+  @include laptop {
+    padding: 40px;
+  }
+
+  @include tablets {
+    padding: 20px;
+  }
+}
+
+.title {}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.list {
+
+}
+
+.listItem {
+  margin-bottom: 5px;
+}
+
+.returnButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #b83ffd;
+  margin-top: 40px;
+
+  @include tablets {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}

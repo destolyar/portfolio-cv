@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { Company } from './Company'
 import styles from '../../../styles/components/Experience/Employment/Employment.module.scss'
+import companies from "../../../companies.json"
+import Link from 'next/link'
 
 export const Employment = () => {
   const variants = {
@@ -27,20 +29,16 @@ export const Employment = () => {
       exit="exit"
       transition={{ type: "linear" }}
       className={styles.work}>
-      <Company
-        companyType='Outsourcing company'
-        label='EPAM Systems'
-        date='Jan 2022 - Feb 2023'
-        image='/companies/epam.png'
-        cutImage={false}
-        position={"Frontend developer (React)"} />
-      <Company
-        companyType='Telecommunication company'
-        label='Business network'
-        date='Jun 2021 - Jan 2022'
-        image='/companies/buisness-network.jpg'
-        cutImage={true}
-        position={"Frontend developer (Vue)"}/>
+      {companies.map(company =>
+        <Company
+          key={company.id}
+          companyType={company.companyType}
+          label={company.label}
+          date={company.date}
+          image={company.image}
+          cutImage={company.cutImage}
+          position={company.position}
+          id={company.id} />)}
     </motion.section>
   )
 }

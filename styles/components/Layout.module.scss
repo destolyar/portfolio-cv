@@ -10,10 +10,11 @@
 
   @include laptop {
     padding: 0 40px;
+    padding-right: 0;
   }
 
   @include tablets {
-    padding: 20px 0;
+    padding: 0;
     flex-direction: column;
     align-items: center;
   }

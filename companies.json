@@ -1,0 +1,33 @@
+[
+  {
+    "id": "epam",
+    "companyType": "Outsourcing company",
+    "label": "EPAM Systems",
+    "date": "Jan 2022 - Feb 2023",
+    "image": "/companies/epam.png",
+    "cutImage": false,
+    "position": "Frontend developer (React)",
+    "description": [
+      "As a Frontend Developer, I developed an e-commerce platform using the React Hydrogen framework.",
+      "Being one of the 4 JS engineers on our project, I took responsibility for handling complex and business-critical tasks (new features, supporting existing functionality, SPA SEO optimization)",
+      "Personally developed key features such as the shopping cart, product showcase, store search, and the homepage.",
+      "I also refactored legacy code, resulting in a 30% reduction in overall code size.",
+      "Worked closely with a UI/UX designer to improve the internal library of UI components.",
+      "Additionally, I successfully negotiated with the client to enhance the project and delivered results within sprints.",
+      "Reduced project bundle size, refactored legacy code, and optimized application performance.",
+      "Participated in conducting code reviews and providing feedback to project colleagues, contributing to improved code quality and team collaboration.",
+      "Implemented optimal caching methods and lazy loading to speed up page load times and improve user experience.",
+      "Developed project documentation and trained new team members, helping them quickly understand the project and start actively interacting with colleagues."
+    ]
+  },
+  {
+    "id": "buisness-network",
+    "companyType": "Telecommunication company",
+    "label": "Business network",
+    "date": "Jun 2021 - Jan 2022",
+    "image": "/companies/buisness-network.jpg",
+    "cutImage": true,
+    "position": "Frontend developer (Vue)",
+    "description": []
+  }
+]
