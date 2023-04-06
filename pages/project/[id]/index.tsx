@@ -8,9 +8,9 @@ import { Info } from "../../../components/ProjectPage/Info";
 
 
 interface TypeProject {
-    id: string, 
-    label: string, 
-    image: string; 
+    id: string,
+    label: string,
+    image: string;
     screenshots: string[],
     deployLink: string,
     description: string,
@@ -26,10 +26,10 @@ const ProjectPage = () => {
         stack: [""]
     } as TypeProject)
     const router = useRouter()
-    
+
 
     useEffect(() => {
-        if(router.isReady) {
+        if (router.isReady) {
             const { id } = router.query
             const project = projects.filter(i => i.id === id)[0]
             setProject(project)
@@ -37,24 +37,24 @@ const ProjectPage = () => {
     }, [router.isReady, router.query])
 
     const {
-        screenshots, 
-        label, 
-        deployLink, 
-        description, 
-        stack, 
-        responsibility, 
-        github, 
-        blurImage} = project
-    
-    return(
+        screenshots,
+        label,
+        deployLink,
+        description,
+        stack,
+        responsibility,
+        github,
+        blurImage } = project
+
+    return (
         <ProjectPageLayout label={label}>
-            <ImageSwitcher imagesPath={screenshots} blurImage={blurImage}/>
-            <Info 
-                responsibility={responsibility} 
-                description={description} 
-                stack={stack} 
+            <ImageSwitcher imagesPath={screenshots} blurImage={blurImage} />
+            <Info
+                responsibility={responsibility}
+                description={description}
+                stack={stack}
                 deployLink={deployLink}
-                github={github}/>
+                github={github} />
         </ProjectPageLayout>
     )
 }
