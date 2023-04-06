@@ -4,8 +4,8 @@ import { useState } from 'react'
 import { FreelanceProjects } from "./FreelanceProjects/FreelanceProjects";
 import { motion } from "framer-motion";
 
-const Employment = dynamic(() => import("./Employment/Employment").then((mod) => mod.Employment))
-const AboutMe = dynamic(() => import("./AboutMe/AboutMe").then((mod) => mod.AboutMe))
+const Employment = dynamic<React.FC>(() => import("./Employment/Employment").then((mod) => mod.Employment)) as React.FC
+const AboutMe = dynamic<React.FC>(() => import("./AboutMe/AboutMe").then((mod) => mod.AboutMe)) as React.FC
 
 const experienceVariants = {
   "freelance":  <FreelanceProjects />,
