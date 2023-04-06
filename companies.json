@@ -28,6 +28,13 @@
     "image": "/companies/buisness-network.jpg",
     "cutImage": true,
     "position": "Frontend developer (Vue)",
-    "description": []
+    "description": [
+      "Collaborated on the development of platform bn.by",
+      "Enhanced the platform's search functionality by implementing advanced filtering options, improving the user experience and increasing the efficiency of search queries",
+      "Developed and integrated a user-friendly notification system to keep users informed of important updates, events, and news within the platform",
+      "Assisted in optimizing the website's performance and loading speed by employing best practices in web development, ensuring a smooth browsing experience across all devices",
+      "Spearheaded the implementation of a responsive, mobile-first design, allowing users to access the platform with ease from various devices and screen sizes",
+      "Worked closely with the design and backend development teams to ensure seamless coordination and timely completion of tasks, leading to the successful launch of several new features and improvements"
+    ]
   }
 ]
