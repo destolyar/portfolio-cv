@@ -16,7 +16,7 @@ export const AboutMe: React.FC = () => {
       exit="exit"
       transition={{ type: "linear" }}
       className={styles.work}>
-      <p>2 years of experience in frontend development. As main frontend technologies, I have experience with React and Vue on commercial projects. The largest projects I worked on were a beauty e-commerce website built with the React framework Hydrogen, and a platform for connecting businesses to the internet and managing subscriptions built with Vue. I also have experience in backend development using Node.js (Nest), testing with Python (Selenium), and working with SQL and NoSQL databases. Additionally, I&apos;m familiar with Golang.</p>
+      <p>Year of experience in frontend development. As main frontend technologies, I have experience with React and Vue on commercial projects. The largest projects I worked on were a beauty e-commerce website built with the React framework Hydrogen, and a platform for connecting businesses to the internet and managing subscriptions built with Vue. I also have experience in backend development using Node.js (Nest), testing with Python (Selenium), and working with SQL and NoSQL databases. Additionally, I&apos;m familiar with Golang.</p>
     </motion.section>
   )
 }
